@@ -5,47 +5,116 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Privacy Policy – Photo Sweep</title>
   <style>
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-      line-height: 1.6;
-      color: #222;
-      background-color: #fff;
+    * {
       margin: 0;
       padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      line-height: 1.7;
+      color: #1a1a1a;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      min-height: 100vh;
+      padding: 2rem 1rem;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      background: white;
+      border-radius: 16px;
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+      overflow: hidden;
     }
     header {
-      background: #5b4bff;
+      background: linear-gradient(135deg, #5b4bff 0%, #7c3aed 100%);
       color: white;
-      padding: 2rem 1rem;
+      padding: 3rem 2rem;
       text-align: center;
     }
-    main {
-      max-width: 800px;
-      margin: 2rem auto;
-      padding: 0 1.5rem;
-    }
-    h1, h2 {
-      color: #333;
-    }
-    h1 {
+    header h1 {
+      font-size: 2rem;
+      font-weight: 700;
       margin-bottom: 0.5rem;
+      color: white;
+    }
+    header p {
+      color: rgba(255, 255, 255, 0.95);
+      font-size: 0.95rem;
+    }
+    main {
+      padding: 3rem 2.5rem;
+    }
+    section {
+      margin-bottom: 2.5rem;
+    }
+    section:last-child {
+      margin-bottom: 0;
+    }
+    h2 {
+      color: #5b4bff;
+      font-size: 1.4rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 2px solid #f0f0f0;
     }
     p {
       margin: 1rem 0;
+      color: #4a5568;
+      font-size: 1rem;
     }
     ul {
       margin: 1rem 0 1rem 1.5rem;
+      color: #4a5568;
+    }
+    li {
+      margin: 0.5rem 0;
+      padding-left: 0.5rem;
+    }
+    a {
+      color: #5b4bff;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.2s;
+    }
+    a:hover {
+      color: #7c3aed;
+      text-decoration: underline;
+    }
+    strong {
+      color: #2d3748;
+      font-weight: 600;
     }
     footer {
       text-align: center;
-      padding: 2rem 1rem;
-      color: #777;
+      padding: 2rem;
+      color: #718096;
       font-size: 0.9rem;
-      border-top: 1px solid #eee;
+      background: #f7fafc;
+      border-top: 1px solid #e2e8f0;
+    }
+    @media (max-width: 768px) {
+      body {
+        padding: 1rem;
+      }
+      header {
+        padding: 2rem 1.5rem;
+      }
+      header h1 {
+        font-size: 1.5rem;
+      }
+      main {
+        padding: 2rem 1.5rem;
+      }
+      h2 {
+        font-size: 1.2rem;
+      }
     }
   </style>
 </head>
 <body>
+  <div class="container">
   <header>
     <h1>Privacy Policy – Photo Sweep</h1>
     <p>Last updated: November 9, 2025</p>
@@ -111,7 +180,8 @@
   </main>
 
   <footer>
-    <p>&copy; 2025 Anaxo Labs — “On-device intelligence, for your privacy.”</p>
+    <p>&copy; 2025 Anaxo Labs — "On-device intelligence, for your privacy."</p>
   </footer>
+  </div>
 </body>
 </html>
